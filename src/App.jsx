@@ -7,18 +7,25 @@ import HomePage from '../pages/HomePage';
 import BooksPage from '../pages/BooksPage';
 import Navbar from '../components/Navbar';
 
+import { StrictMode } from 'react'
+import { BrowserRouter } from "react-router-dom";
+
 
 function App() {
 
   return (
 
-    <>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/books' element={<BooksPage />} />
-      </Routes>
-    </>
+    // <>
+    <BrowserRouter>
+      <StrictMode>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/books' element={<BooksPage />} />
+        </Routes>
+      </StrictMode>
+    </BrowserRouter>
+    // </>
 
   )
 
