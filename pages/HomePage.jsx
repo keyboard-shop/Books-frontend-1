@@ -10,6 +10,7 @@ const HomePage = () => {
       Book-Store HOME PAGE 2 test
       <h1>H1 test for vercel</h1>
       <h2>h2 testing for vercel</h2>
+      <h3>got the changes from vs code tp Github to Vercel</h3>
     </div>
   )
 }
