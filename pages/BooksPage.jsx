@@ -33,8 +33,9 @@ const BooksPage = () => {
 
     const fetchProducts = async () => {
       try {
-          const response = await fetch('http://localhost:8080/api/products');// to -> server.js (backend folder) -> app.use('/api/products', productRoutes);
-  
+          //const response = await fetch('http://localhost:8080/api/products');// to -> server.js (backend folder) -> app.use('/api/products', productRoutes);
+          const response = await fetch('https://books-backend-1.vercel.app/');// to -> Vercel backend folder 
+      
           if (!response.ok) {
               throw new Error('Network response was not ok');
           }
